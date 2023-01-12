@@ -1,0 +1,12 @@
+#!/bin/bash
+
+work=$(pwd)
+file=/sys/firmware/efi
+
+
+if [ -d ${file} ]; then
+   echo "UEFI not avaliable yet, please use Calamares"
+else
+   sudo $work/install.bios
+
+fi
